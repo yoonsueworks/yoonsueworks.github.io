@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "Happiness-Sans-Title";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.todoswrapper {
+  height: 300px;
+  position: relative;
+  display: block;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.715);
+}
+
+body {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+
+img {
+  position: absolute;
+  width: 100vw;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 95%;
+}
+
+.loginform1 {
+  display: flex;
+  align-items: left;
+}
+
+#loginForm input[type="text"] {
+  background-color: rgba(0, 0, 0, 0.318);
+  color: rgb(255, 255, 255);
+  width: 320px;
+  height: 60px;
+  font-size: 28px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  
+}
+
+
+#loginForm ::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#loginForm button {
+  background-color: rgba(0, 0, 0, 0.318);
+  color: rgb(255, 255, 255);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  margin-left: 9px;
+  font-size: 28px;
+  opacity: 80%;
+  height: 60px;
+  width: 120px;
+  cursor: pointer;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#loginForm button:hover { 
+  background-color: rgba(0, 0, 0, 0.871);;
+}
+
+.loginweather {
+  display: flex;
+  align-items: space-between;
+  width:95%;
+  margin: 16px auto;
+  margin-bottom: 40px;
+}
+
+
+
+
+#todo-form input[type="text"]{  
+  background-color: rgba(255, 38, 38, 0.0);
+  color: whitesmoke;
+  width: 400px;
+  height: 40px;
+  font-size: 25px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(127, 1, 37);
+  text-align: center;
+}
+
+#todo-form ::-webkit-input-placeholder {
+  color: rgb(224, 224, 224);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 21.5px;
+}
+
+
+#clock {
+  color: rgb(0, 0, 0);
+  font-size: 150px;
+  width: 100%;
+  border-radius: 50px;
+  font-family: 'Libre Baskerville', serif;
+  background-color: rgba(0, 0, 0, 0.595);
+  text-align: center;
+  letter-spacing: -5px;
+  word-spacing: -5;
+  margin: 0;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.765);
+}
+
+#greeting {
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+  line-height: 50px;
+  margin-top: 0;
+  font-size: 29px;
+  text-shadow: 0px 0px 10px rgba(99, 6, 6, 0.765);
+  letter-spacing: -1.2px;
+}
+
+#rcontainer {
+  display: block;
+  margin-left: auto;
+}
+
+#weather span:first-child{
+  display: inline;
+  font-size: 23px;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.765);
+}
+#city {
+  font-size: 15px;
+  color: white;
+  text-align: right;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.765);
+}
+
+#quote {
+  padding-top: 30px;
+  font-family: 'Hahmlet', serif;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  line-height: 1.8rem;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+#quote #author {
+  font-family: 'Hahmlet', serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#todo-list {
+  display: inline-block;
+  list-style-type: none;
+  padding-top: 0px;
+  
+}
+#todo-list li span {
+  color: white;
+  line-height: 35px;
+  font-family: 'Hahmlet', serif;
+}
+
+#todo-list button {
+  background-color: rgba(255, 0, 0, 0.4);
+  border: none;
+  border-radius: 0%;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+/*
+
+
+#clock {
+  color: white;
+  font-size: 150px;
+  font-family:  'Mystery Quest', cursive;
+  text-align: center;
+  margin: 0;
+}
+
+
+#todos {
+    display: flex;
+    
+}
+
+#todo-list button {
+  background-color: none;
+  padding: 15px 16px;
+  border: none;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+#todo-list {
+    display: inline-block;
+    font-family: "Happiness-Sans-Title";
+    list-style-type: none;
+    color: white;
+    margin-left: 300px;
+}
+
+#todo-form input{
+    width: 50%;
+    justify-content: center;
+    margin-left: 300px;
+    border: 1px solid black;
+}
+
+
+
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 25px;
+  background-color: aliceblue;
+  opacity: 80%;
+  border: none;
+  font-family: 'Mystery Quest', cursive;
+}
+#weather span:first-child{
+    display: inline;
+    font-family: 'Mystery Quest', cursive;
+    /*font-family: "Happiness-Sans-Title";
+    font-size: 23px;
+    color: white;
+    margin-bottom: 20px;
+}
+#city {
+    font-family: 'Mystery Quest', cursive;
+    /*font-family: "Happiness-Sans-Title";
+    font-size: 15px;
+    color: white;
+    text-align: right;
+}
+#loginForm button {
+    background-color: none;
+    padding: 10px 20px;
+    border: none;
+    margin-left: 20px;
+    font-size: 25px;
+    color: white;
+    opacity: 50%;
+    font-family: 'Mystery Quest', cursive;
+    height: 130.88;
+}
+
+*/

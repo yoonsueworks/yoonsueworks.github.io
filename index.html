@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+    
+</head>
+<body>
+    
+    <div class="loginweather">
+    <div class="loginform1">
+        <form class="hidden" id="loginForm">
+            <input 
+            required
+            maxlength="15"
+            type="text" 
+            placeholder="What is your name?"
+            />
+            <button>log-in</button>
+        </form>
+    </div>
+        <h1 id="greeting" class="hidden"></h1>
+        <div id="rcontainer">
+            <div id="weather">
+                <span></span><br>
+                <span id="city"></span>
+            </div>
+        </div>
+    </div>
+    <h2 id="clock"></h2>
+    <div id="quote">
+        <span></span><br/>
+        <span id="author"></span>
+    </div>
+    <div class="todoswrapper">
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required/>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+
+    
+    
+</body>
+<script src="js/greetings.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather.js"></script>
+</html>
